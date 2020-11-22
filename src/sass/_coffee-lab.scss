@@ -1,0 +1,79 @@
+.coffee-lab-container{
+  background-color: #fff;
+}
+.coffee-lab{
+  text-align: center;
+  padding:80px 0 215px;
+
+  &--thin{
+    font-weight: 100;
+  }
+  &--bold{
+    font-weight: 700;
+  }
+  &__title, &__description{
+    line-height: 1.4;    
+    color: #000;
+  }
+  &__title{
+    margin: 0;
+    font-size: 4.6rem;
+    letter-spacing:.05em;
+  }
+  &__description{
+    font-size: 1.6rem;
+    margin-top: 8px;
+    margin-bottom: 0;
+    letter-spacing: .05em;
+    &::after{
+      margin: 55px auto;
+      width: 70px;
+      display: block;
+      border-top: 1px solid currentColor;
+      content: "";
+    }
+  }
+
+  &__lab-list{
+    display: flex; 
+    width: 1200px;
+    margin: 0 auto;
+    background-color: yellow;
+  }
+  &__lab-item{
+    width: 690px;
+    height: 690px;
+    flex-shrink: 0;
+    background: no-repeat 0 0 / 100% 100%;
+
+    a{
+      display: inline-block;
+      font-size: 3.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 407px 0 120px;
+      text-align: left;
+
+      &::after{
+        content:"";
+        display: inline-block;
+        width: 0;
+        height: 10px;
+        background-color: #fff;
+        transition: all .4s;
+      }
+      &:hover::after, &:focus::after{
+        width: 100%;
+      }
+    }
+  }
+  .menu{
+    position: relative;
+    background-image: url(../images/photo-frame1.jpg);
+    z-index: 1;
+  }
+  .brista{
+    background-image: url(../images/photo-frame2.jpg);
+    transform: translate(-184px, 134px);
+  }
+}
